@@ -97,7 +97,7 @@ cloudflare_ddns() {
   declare CFRECORD="$(
     cloudflare_api "GET" "zones/$ZONEID/dns_records?type=$RECORDTYPE&name=$DOMAIN&match=all&order=type"
   )"
-  if [ -n "$(echo $CFRECORD | $GREP -o -P '(?<="result":")[^"]+')" ]; then
+  if [ "$(echo $CFRECORD | $GREP -o -P '(?<="result":")[^"]+')" = "" ]; then
     echo "Error: Cloudflare DNS $RECORDTYPE record does not exist for $DOMAIN."
     return 1
   elif [ "$(echo $CFRECORD | $GREP -o -P '(?<="content":")[^"]+')" = "$SYSTEMIP" ]; then

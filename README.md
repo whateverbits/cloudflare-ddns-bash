@@ -78,4 +78,4 @@ Open new issues in the [GitLab Issue Tracker](https://gitlab.com/whateverbits/cl
 ## License
 Cloudflare DDNS Bash is distributed under the [ISC License](https://gitlab.com/whateverbits/cloudflare-ddns-bash/-/blob/main/LICENSE).
 
-Cloudflare is a registered trademark of [Cloudflare Inc.](https://cloudflare.com/).
+Cloudflare is a registered trademark of [Cloudflare Inc](https://cloudflare.com/).
